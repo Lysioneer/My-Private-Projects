@@ -1,0 +1,16 @@
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\bin\Debug\net5.0\StopSpinningMyWords.exe
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\bin\Debug\net5.0\StopSpinningMyWords.deps.json
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\bin\Debug\net5.0\StopSpinningMyWords.runtimeconfig.json
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\bin\Debug\net5.0\StopSpinningMyWords.runtimeconfig.dev.json
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\bin\Debug\net5.0\StopSpinningMyWords.dll
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\bin\Debug\net5.0\ref\StopSpinningMyWords.dll
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\bin\Debug\net5.0\StopSpinningMyWords.pdb
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\obj\Debug\net5.0\StopSpinningMyWords.csproj.AssemblyReference.cache
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\obj\Debug\net5.0\StopSpinningMyWords.GeneratedMSBuildEditorConfig.editorconfig
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\obj\Debug\net5.0\StopSpinningMyWords.AssemblyInfoInputs.cache
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\obj\Debug\net5.0\StopSpinningMyWords.AssemblyInfo.cs
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\obj\Debug\net5.0\StopSpinningMyWords.csproj.CoreCompileInputs.cache
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\obj\Debug\net5.0\StopSpinningMyWords.dll
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\obj\Debug\net5.0\ref\StopSpinningMyWords.dll
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\obj\Debug\net5.0\StopSpinningMyWords.pdb
+C:\My Stuff\Documents\Algos\StopSpinningMyWords\StopSpinningMyWords\obj\Debug\net5.0\StopSpinningMyWords.genruntimeconfig.cache

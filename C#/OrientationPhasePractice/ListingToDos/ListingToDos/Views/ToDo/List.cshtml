@@ -1,0 +1,63 @@
+﻿@model ListingToDos.Models.ViewModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>List of ToDos</title>
+    <link href="./wwwroot/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="text-3xl font-bold underline">
+        <form action="/search" method="post">
+            <input type="text" placeholder="Search..." name="searchInput" />
+            <button type="submit">Search</button>
+        </form>
+
+        <h1>ToDos for today: </h1>
+        @Html.ActionLink("See Undone", "ListUndone", "ToDo")
+        @Html.ActionLink("See All", "List", "ToDo")
+        @Html.ActionLink("Add a ToDo", "Add", "ToDo")
+        @Html.ActionLink("See Assignees", "ListAssignees", "Assignee")
+        <table>
+            <tr>
+                <th>Id: </th>
+                <th>Title: </th>
+                <th>Description: </th>
+                <th>Is it urgent? </th>
+                <th>Is it done? </th>
+                <th>Assignee: </th>
+            </tr>
+            @for (int i = 0; i < Model.AllToDos.Count; i++)
+            {
+                <tr>
+                    <td>@Model.AllToDos[i].Key</td>
+                    <td>@Model.AllToDos[i].Title</td>
+                    <td>@Model.AllToDos[i].Description</td>
+                    @if (Model.AllToDos[i].IsUrgent == true)
+                    {
+                        <td>Yes</td>
+                    }
+                    else
+                    {
+                        <td>No</td>
+                    }
+                    @if (Model.AllToDos[i].IsDone == true)
+                    {
+                        <td>Yes</td>
+                    }
+                    else
+                    {
+                        <td>No</td>
+                    }
+                    <td>@Model.AllToDos[i].Assignee.Name</td>
+                    <td>
+                        <a href="/@Model.AllToDos[i].Key/remove">Delete</a>
+                    </td>
+                    <td>
+                        <a href="/@Model.AllToDos[i].Key/edit">Edit</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit a character</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+
+    <div class="text-center">
+        <h1>Edit a Character</h1>
+        <a href="/">Cancel</a>
+    </div>
+
+    <form action="/editCharacter" method="post">
+        <input type="hidden" name="id" th:value="${character.id}">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" th:value="${character.name}">
+        <label for="gender">Gender: </label>
+        <select id="gender" name="gender">
+            <div th:switch="${character.gender.equals('Female')}">
+                <p th:case="${true}">
+                    <option>Male</option>
+                    <option selected="">Female</option>
+                </p>
+                <p th:case="*">
+                    <option selected="">Male</option>
+                    <option>Female</option>
+                </p>
+            </div>
+        </select>
+        <label for="race">Race: </label>
+        <p id="race" th:text="${character.race}">race</p>
+        <label for="level">Level: </label>
+        <input type="number" id="level" name="level" th:min="${character.level}"
+               max="80" th:value="${character.level}">
+        <label for="profession">Profession: </label>
+        <p th:text="${character.profession}" id="profession">profession</p>
+        <button type="submit">Edit</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Overview</title>
+</head>
+<body>
+
+    <form method="post", action="/search">
+        <label for="search"></label>
+        <input type="text" id="search" name="searchInput" placeholder="Search for...">
+        <button type="submit">Search</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>Id: </th>
+            <th>Name: </th>
+            <th>Surname: </th>
+            <th>Active: </th>
+            <th>Email: </th>
+            <th>Phone number: </th>
+            <th>Added on: </th>
+        </tr>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.id}">1</td>
+            <td th:text="${user.name}">name</td>
+            <td th:text="${user.surname}">surname</td>
+            <td><a th:href="@{/{id}/status(id=${user.id})}" th:text="${user.active}">active</a></td>
+            <td th:text="${user.email}">email</td>
+            <td th:text="${user.phoneNumber}">phoneNumber</td>
+            <td th:text="${user.creation}">creation</td>
+        </tr>
+    </table>
+
+</body>
+</html>

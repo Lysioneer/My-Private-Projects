@@ -1,0 +1,32 @@
+﻿@model BankOfSimba.Models.ViewModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ListOfAccounts</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Index: </th>
+            <th>Name: </th>
+            <th>Balance: </th>
+            <th>Animal: </th>
+        </tr>
+
+        @for (int i = 0; i < Model.AllAccounts.Count; i++)
+        {
+            <tr>
+                <td>@i</td>
+                <td>@Model.AllAccounts[i].Name</td>
+                <td>
+                    @Model.AllAccounts[i].Balance
+                    @Model.AllAccounts[i].Currency
+                </td>
+                <td>@Model.AllAccounts[i].AnimalType</td>
+            </tr>
+        }
+    </table>
+
+</body>
+</html>

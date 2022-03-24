@@ -1,0 +1,40 @@
+﻿@model ListingToDos.Models.ViewModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>List Of Assignees</title>
+</head>
+<body>
+
+    @Html.ActionLink("Back", "List", "ToDo")
+
+    <h1>List of Assignees</h1>
+
+    @Html.ActionLink("Add assignee", "AddAssignee", "Assignee")
+
+    <table>
+        <tr>
+            <th>Id: </th>
+            <th>Name: </th>
+            <th>Gender: </th>
+            <th>Email: </th>
+        </tr>
+        @for (int i = 0; i < Model.AllAssignees.Count; i++)
+        {
+            <tr>
+                <td>@Model.AllAssignees[i].Key</td>
+                <td>@Model.AllAssignees[i].Name</td>
+                <td>@Model.AllAssignees[i].Gender</td>
+                <td>@Model.AllAssignees[i].Email</td>
+                <td>
+                    <a href="/@Model.AllAssignees[i].Key/deleteAssignee">Delete</a>
+                </td>
+                <td>
+                    <a href="/@Model.AllAssignees[i].Key/editAssignee">Edit</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+</body>
+</html>

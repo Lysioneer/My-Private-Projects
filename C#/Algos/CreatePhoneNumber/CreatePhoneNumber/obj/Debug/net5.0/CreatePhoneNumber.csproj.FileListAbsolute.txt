@@ -1,0 +1,16 @@
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\bin\Debug\net5.0\CreatePhoneNumber.exe
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\bin\Debug\net5.0\CreatePhoneNumber.deps.json
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\bin\Debug\net5.0\CreatePhoneNumber.runtimeconfig.json
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\bin\Debug\net5.0\CreatePhoneNumber.runtimeconfig.dev.json
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\bin\Debug\net5.0\CreatePhoneNumber.dll
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\bin\Debug\net5.0\ref\CreatePhoneNumber.dll
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\bin\Debug\net5.0\CreatePhoneNumber.pdb
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\obj\Debug\net5.0\CreatePhoneNumber.csproj.AssemblyReference.cache
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\obj\Debug\net5.0\CreatePhoneNumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\obj\Debug\net5.0\CreatePhoneNumber.AssemblyInfoInputs.cache
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\obj\Debug\net5.0\CreatePhoneNumber.AssemblyInfo.cs
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\obj\Debug\net5.0\CreatePhoneNumber.csproj.CoreCompileInputs.cache
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\obj\Debug\net5.0\CreatePhoneNumber.dll
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\obj\Debug\net5.0\ref\CreatePhoneNumber.dll
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\obj\Debug\net5.0\CreatePhoneNumber.pdb
+C:\My Stuff\Documents\Algos\CreatePhoneNumber\CreatePhoneNumber\obj\Debug\net5.0\CreatePhoneNumber.genruntimeconfig.cache

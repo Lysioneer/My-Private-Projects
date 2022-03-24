@@ -1,0 +1,58 @@
+﻿@model ListingToDos.Models.ViewModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Search result</title>
+</head>
+<body>
+
+    @Html.ActionLink("Cancel", "List", "ToDo")
+    <form action="/search" method="post">
+        <input type="text" placeholder="Search for something else..." name="searchInput" />
+        <button type="submit">Search</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>Id: </th>
+            <th>Title: </th>
+            <th>Description: </th>
+            <th>Is It Urgent?</th>
+            <th>Is It Done?</th>
+            <th>Assignee: </th>
+        </tr>
+        @for (int i = 0; i < Model.AllToDos.Count; i++)
+        {
+            <tr>
+                <td>@Model.AllToDos[i].Key</td>
+                <td>@Model.AllToDos[i].Title</td>
+                <td>@Model.AllToDos[i].Description</td>
+                @if (Model.AllToDos[i].IsUrgent == true)
+                {
+                    <td>Yes</td>
+                }
+                else
+                {
+                    <td>No</td>
+                }
+                @if (Model.AllToDos[i].IsDone == true)
+                {
+                    <td>Yes</td>
+                }
+                else
+                {
+                    <td>No</td>
+                }
+                <td>@Model.AllToDos[i].AssigneeId</td>
+                <td>
+                    <a href="/@Model.AllToDos[i].Key/remove">Delete</a>
+                </td>
+                <td>
+                    <a href="/@Model.AllToDos[i].Key/edit">Edit</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@model ASPPractise.Models.Number
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Result Page</title>
+</head>
+<body>
+
+    <h1>@Model.result</h1>
+
+    @Html.ActionLink("Calculate some more", "Calculator", "Home")
+    @Html.ActionLink("Back to home page", "/", "Home")
+
+</body>
+</html>

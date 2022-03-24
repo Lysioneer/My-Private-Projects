@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+</head>
+<body>
+
+    <form action="/search" method="post">
+        <input type="text" placeholder="Search..." name="searchInput" />
+        <button type="submit">Search</button>
+    </form>
+
+    <h1>ToDos for today: </h1>
+    <a href="/ListUndone">See Undone</a>
+    <a href="/">See All</a>
+    <a href="/AddToDo">Add a ToDo</a>
+    <a href="/Assignees">See Assignees</a>
+
+<!--    <p th:text="${todos}"></p>-->
+
+    <table>
+        <tr>
+            <th>Id: </th>
+            <th>Title: </th>
+            <th>Description: </th>
+            <th>Is it urgent? </th>
+            <th>Is it done? </th>
+            <th>Assignee: </th>
+        </tr>
+<!--        <tr th:each="todo : ${todos}">-->
+<!--            <td th:text="${todo.id}">1</td>-->
+<!--            <td th:text="${todo.title}">Title</td>-->
+<!--        </tr>-->
+    </table>
+
+</body>
+</html>

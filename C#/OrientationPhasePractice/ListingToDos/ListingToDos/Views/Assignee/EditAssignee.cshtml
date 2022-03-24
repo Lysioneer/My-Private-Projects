@@ -1,0 +1,21 @@
+﻿@model ListingToDos.Models.ViewModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Edit Assignee @Model.Assignee.Key</title>
+</head>
+<body>
+
+    <h2>@Model.Assignee.Name</h2>
+
+    <form action="/EditedAssignee" method="post">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" value="@Model.Assignee.Name" />
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" value="@Model.Assignee.Email" />
+        <input type="hidden" name="key" value="@Model.Assignee.Key" />
+        <button type="submit">Edit</button>
+    </form>
+
+</body>
+</html>

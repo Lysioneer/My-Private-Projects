@@ -1,0 +1,47 @@
+﻿@model ListingToDos.Models.ViewModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Edit ToDo number @Model.ToDo.Key</title>
+</head>
+<body>
+
+    <h2>@Model.ToDo.Title</h2>
+
+    <form action="/@Model.ToDo.Key/edited" method="post">
+        <label for="title">Title: </label>
+        <input type="text" id="title" name="title" value="@Model.ToDo.Title" />
+        <label for="description">Description: </label>
+        <input type="text" id="description" name="description" value="@Model.ToDo.Description" />
+        <label for="isUrgent">IsUrgent: </label>
+        @if (Model.ToDo.IsUrgent)
+        {
+            <input type="checkbox" id="isUrgent" name="isUrgent" checked value="true"/>
+        }
+        else
+        {
+            <input type="checkbox" id="isUrgent" name="isUrgent" value="true"/>
+        }
+        <label for="isDone">IsDone: </label>
+        @if (Model.ToDo.IsDone)
+        {
+            <input type="checkbox" id="isDone" name="isDone" checked value="true"/>
+        }
+        else
+        {
+            <input type="checkbox" id="isDone" name="isDone" value="true"/>
+        }
+        <input type="hidden" name="key" value="@Model.ToDo.Key" />
+        <label for="assignee">Assignee: </label>
+        <select id="assignee" name="assigneeKey">
+            @foreach (var assignee in Model.AllAssignees)
+            {
+                <option value="@assignee.Key" selected="@Model.Assignee.Name">@assignee.Name</option>
+            }
+        </select>
+        <button type="submit">Submit</button>
+        @Html.ActionLink("Cancel", "List", "ToDo")
+    </form>
+
+</body>
+</html>
