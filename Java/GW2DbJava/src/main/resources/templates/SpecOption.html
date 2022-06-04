@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Select specialization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/StyleSheet.css" type="text/css">
 </head>
 <body>
+    <div class="body">
+        <div class="header">
+        <h1>Select your specialization</h1>
 
-    <h1>Select your specialization</h1>
-
-    <form method="post" action="/specOption">
-        <label for="spec">Specialization: </label>
-        <select id="spec" name="spec" >
-            <option th:each="spec : ${specs}" th:text="${spec}">spec</option>
-        </select>
-        <input type="hidden" name="id" th:value="${character.getId()}">
-        <button type="submit">Select</button>
-    </form>
-
+        <form method="post" action="/specOption">
+            <label for="spec">Specialization: </label>
+            <select id="spec" name="spec" >
+                <option th:each="spec : ${specs}" th:text="${spec}">spec</option>
+            </select>
+            <input type="hidden" name="id" th:value="${character.getId()}"><br/>
+            <div class="button">
+            <button type="submit">Select</button>
+            </div>
+        </form>
+        </div>
+    </div>
 </body>
 </html>

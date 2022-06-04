@@ -1,0 +1,58 @@
+* {
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 900;
+}
+
+body {
+    margin: 100px 100px;
+    background-image: url("gw2BackgroundEdited.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+}
+.body {
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    padding-top: 0px;
+    border-radius: 15px;
+    max-width: 900px;
+    min-width: 900px;
+}
+#bodyAddChar {
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    padding-top: 0px;
+    border-radius: 15px;
+    max-width: 700px;
+    min-width: 700px;
+}
+.header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table {
+    margin: auto;
+}
+table th, td{
+    border-right: solid 1px black;
+    border-bottom: solid 3px black;
+    text-align: center;
+    padding: 3px 5px 5px 3px;
+}
+form label, input, select {
+    margin-top: 15px;
+}
+button {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    background-color: #e84a5f;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 10px 6px 10px;
+}
+.button {
+    text-align: center;
+}
